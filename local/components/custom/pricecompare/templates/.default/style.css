@@ -1,0 +1,30 @@
+.competitor-prices-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.competitor-prices-title {
+    padding: 20px;
+    margin: 0;
+    background: #2c3e50;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.price-comparison {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.price-better {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.price-worse {
+    color: #e74c3c;
+    font-weight: bold;
+}
