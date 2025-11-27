@@ -23,13 +23,18 @@ $APPLICATION->SetTitle("Задайте вопрос");
 </div>
 <h2>Задать вопрос</h2>
 	<?$APPLICATION->IncludeComponent(
-	"bitrix:main.feedback",
-	"bootstrap_v4",
-	Array(
+	"bitrix:main.feedback", 
+	"bootstrap_v5", 
+	[
 		"EMAIL_TO" => "sale@nyuta.bx",
-		"EVENT_MESSAGE_ID" => array(),
+		"EVENT_MESSAGE_ID" => [
+		],
 		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
-		"REQUIRED_FIELDS" => array("NAME","EMAIL"),
-		"USE_CAPTCHA" => "Y"
-	)
+		"REQUIRED_FIELDS" => [
+			0 => "NAME",
+		],
+		"USE_CAPTCHA" => "Y",
+		"COMPONENT_TEMPLATE" => "bootstrap_v5"
+	],
+	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php")?>
